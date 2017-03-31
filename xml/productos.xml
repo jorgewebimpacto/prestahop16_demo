@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+    <Products>
+        <reference>demo_28</reference>
+        <price>30.502569</price>
+        <active>1</active>
+        <id_category_default>5</id_category_default>
+        <name>pantalon hombre</name>
+
+
+    </Products>
+    <Products>
+        <reference>demo_30</reference>
+        <price>30.502569</price>
+        <active>1</active>
+        <id_category_default>5</id_category_default>
+        <name>pantalon mujer</name>
+
+
+    </Products>
+</Document>

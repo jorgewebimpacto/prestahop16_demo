@@ -1,0 +1,57 @@
+span{
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding: 3px;
+    color: #FFF;
+    text-align: center;
+    background: red;
+}
+
+span:after{
+    content: "no"; /*if CSS is disabled span elements are not displayed*/
+}
+.label_radio_btn
+{
+    font-size: 12px;
+    font-family: 'lato',sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    height: 29px;
+    left: 0;
+    width: 29px;
+    top: 0;
+    padding: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+input{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 31px;
+    height: 31px;
+    /*hide the radio button*/
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type="radio"] + span{ /*the span element that immediately follow the radio button */
+    visibility: hidden; /*temporarily hide the "YES" label*/
+    background: green;
+}
+
+input[type="radio"] + span:after{
+    content: "yes";
+}
+
+
+input[type="radio"]:checked + span{
+    visibility: visible; /*show the "YES" label only if the radio button is checked*/
+}

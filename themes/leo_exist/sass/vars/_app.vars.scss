@@ -1,0 +1,116 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+$app-brand-prefix        : leo !default;
+
+/**
+ *   Blocks Layout Selectors 
+ */
+$block-prefix 			 : block!default;
+$block-selector          : block !default;
+$block-heading-selector  : title_block !default;
+$block-content-selector  : block_content !default;
+
+/**
+ * Product Item Selectors
+ */
+$products-container-selector : products_block !default;
+$products-row-selector 		 : products-row !default; 
+$products-col-selector 		 : product-col !default;
+//------- Path Variables
+$image-path:                   "images/"!default;
+$font-custom-path:             "../font/"!default;
+$image-theme-base-path:        "../img/"!default;
+$image-theme-path:             "../img/icon/"!default;
+$image-base-path:              "../../../img/"!default;
+$image-skin-path:              "../../img/icon/"!default;
+$image-module-path:            "../../../img/icon/"!default;
+$module-path:                  "../../../modules/"!default;
+
+$theme-font-path	   :          	 "../fonts/" !default;
+
+
+/***********************************************************************/
+// some basic colors
+
+$sky:                  			    #7bbd42 !default;  // Skin sky
+$yellow:                  			#ffc801 !default;  // Skin yellow
+$coral:								#EE6C92 !default;  // Slin Coral
+$rico:								#51BAA9 !default;  // Skin Rico
+$green:                 			#29C76A !default;  // Skin Green
+$pink:                  			#c3325f !default;
+$white:			 				    #FFFFFF !default;
+$cyandark:   						#057865 !default;
+$aqua: 								#75aab8 !default;
+$turquoise:                         #4ACFD4 !default; // label new
+$nav-border-color-hover:            #e2e2e2 !default;
+$golden-poppy:                      #F2BE01 !default;
+$valencia:      					#D44A4A !default;
+$tundora:                           #8c8c8c !default;  // Topbar + Vertical Menu Content
+$wild-sand:                         #ffffff !default;  // Background Body - default
+$silver:                            #f5f5f5 !default;  
+$red-light:            				#df5050!default;
+$yellow-light:           			#ffdc73!default;
+$nocolor:							transparent!default;
+
+//------- Themes colors
+
+$black:							    #000 !default;
+$black-light:						#171717 !default;
+$gray-light-1 :                     #777 !default;
+$cyan :                             #0eba9e !default; // skin default
+$yellow-darker:           			#ffd314!default;
+
+$blue:                              #1ea7ee !default;  // Skin blue
+$red:                   			#e33434 !default;  // Skin Red
+$orange:                			#d39a00 !default;
+
+
+// some basic font family
+// ========================================================================
+$font-tamoha: "tahoma";
+$font-arial: "Arial";
+
+
+// Variables paths 
+// ========================================================================
+
+
+$font-family:			     	$font-family-base !default; //font base
+$font-family-secondary :        'Latoblack', sans-serif !default; // font heading
+$font-family-tertiary  :         "Kaushan Script" !default;
+$font-family-senary    : 	     $font-family-base;
+$font-family-septenary : 	     $font-family-base;
+
+
+$font-icon-family 	   : 		 "FontAwesome" !default;
+
+//////////////////// Variables defined for Themes + Skins ////////////////
+
+
+$body-bg:                           $silver !default;
+$theme-color:  				        $gray-light-1 !default; 
+
+$theme-color-default : 			    $black !default;
+$theme-color-primary :				$gray-light-1 !default;
+$theme-color-secondary :			$cyan !default;
+$theme-color-tertiary:              #ce4f3e !default;
+
+$theme-bg-default		: $black !default; 
+$theme-bg-secondary 	: $cyan!default; // using variable  for Theme  Skin 
+$theme-bg-threedary  	: $brand-warning!default; // using skin product list
+
+ 
+$border-color  : #eee !default;
+
+$table-bg-color	:  #eee !default;
+
+/* Button */
+
+$font-size-button: $font-size-base - 3px !default;
+
+//
+// Variables
+// --------------------------------------------------
+$rtl-left : left;
+$rtl-right : right;

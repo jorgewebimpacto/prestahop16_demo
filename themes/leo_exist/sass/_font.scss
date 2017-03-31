@@ -1,0 +1,12 @@
+@import 'compass';
+@import "theme_variables";
+
+@font-face {
+    font-family: 'Latoblack';
+    src: url('#{$theme-font-path}Latoblack.eot');
+    src: url('#{$theme-font-path}Latoblack.eot') format('embedded-opentype'),
+         url('#{$theme-font-path}Latoblack.woff') format('woff'),
+         url('#{$theme-font-path}Latoblack.ttf') format('truetype'),
+         url('#{$theme-font-path}Latoblack.svg#Latoblack') format('svg');
+    font-weight: normal;
+}

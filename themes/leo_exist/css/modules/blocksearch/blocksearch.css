@@ -1,0 +1,99 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/* Button */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+#search_block_top {
+  z-index: 999;
+  position: relative;
+}
+
+.ac_results {
+  background: white;
+  border: 1px solid #eeeeee;
+  width: 271px;
+  margin-top: -1px;
+}
+.ac_results li {
+  padding: 0 10px;
+  font-weight: normal;
+  color: #686666;
+  font-size: 13px;
+  line-height: 22px;
+}
+.ac_results li.ac_odd {
+  background: white;
+}
+.ac_results li:hover, .ac_results li.ac_over {
+  background: #fbfbfb;
+}
+
+.groupe-btn {
+  background: #0eba9e;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+}
+.groupe-btn i {
+  color: white;
+}
+
+form#searchbox {
+  background: white;
+  border: 1px solid #eeeeee;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 120%;
+  width: 300px;
+  z-index: 999;
+}
+.rtl form#searchbox {
+  left: 0;
+  right: auto;
+}
+form#searchbox .form-control {
+  width: 84%;
+  float: left;
+  height: 36px;
+}
+form#searchbox label {
+  color: #777777;
+}
+form#searchbox.eshow {
+  display: block;
+}
+form#searchbox input#search_query_block {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+form#searchbox .button.button-small {
+  float: left;
+}
+form#searchbox .button.button-small i {
+  margin-right: 0;
+}
+form#searchbox .button-search {
+  font-size: 14px;
+}

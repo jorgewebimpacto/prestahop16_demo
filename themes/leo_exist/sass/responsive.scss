@@ -1,0 +1,187 @@
+@import "compass";
+@import "theme_variables";
+
+@media (max-width: 1196px) and (min-width: 992px) {
+	//Theme config live
+	.editortool .label-customize {display: none;}
+}
+
+@media (max-width: $screen-md - 2){ //max 990px
+	
+	
+}
+@media (min-width: $screen-lg) { // min 1200px
+
+	//GUEST TRACKING
+	#guestTracking {
+		.form-group {
+      		overflow: hidden;
+	      	i {
+	        	@include rtl-padding-left(10px);
+	      	}
+    	}
+    	.form-control {
+      		@include rtl-float-left ();
+    	}
+    	label {
+      		@include rtl-float-left ();
+      		clear: both;
+     		width: 100%;
+    	}
+	}
+}
+@media (max-width: $screen-md-max) { // max 1199px
+  	//Zoom
+  	.zoomdiv {
+    	display: none !important;
+  	}
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) { // min 479px max 991px
+	.blockcart_top{
+		// position: absolute;
+		// right: 0;
+	}	
+} 
+
+
+@media (max-width: $screen-md - 2){ //max 990px
+	//Menu Canvas
+	html {background:none}
+	.navbar-header .navbar-toggle{
+		  display: block;
+		  @include rtl-float-left();
+		  @include rtl-margin (0,0,20px,0);
+	}
+	.collapse.navbar-collapse  {
+	  	display: none!important
+	}
+	.widget-video .iframe {width:130px;}
+	.navbar-nav {
+		float: none;
+	  > li {
+	  	float: none;
+	  }
+	}
+}
+
+@media (min-width: $screen-md - 1 ){ // 991px
+	// Menu Canvas
+	.off-canvas-active > #page,
+	.off-canvas-active > #off-canvas-nav{
+		 @include translate(0,0);
+		position:relative!important;
+	}
+	#off-canvas-button{ display:none !important}
+}
+
+@media (max-width: $screen-sm-max) { // max 991px
+	#manucarousel .carousel-control {
+		border: 0 none;
+	    height: auto !important;
+	    top: 50% !important;
+	    line-height: 20px;
+	    font-size: 30px;
+	    margin-top: -15px;
+	}
+	.navbar-header {float:none;}
+	#header-main{
+		#header_logo {
+			display:inline-block;
+			text-align:center;
+			margin-bottom:20px;
+			a {display: inline-block;}
+		}
+	}
+	.header_user_info .dropdown-toggle{
+	  display: block;
+	}
+	.dropdown-menu > li > a{padding: 3px 0;}
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+		background: transparent;
+	}
+	ul.links li .fa, ul.links li .icon{
+		width: 10px;
+	}
+	#footer #newsletter_block_left .newsletter-input{width: 200px;}
+	#footer #newsletter_block_left.block .title_block{
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: $screen-xs-max) { // max 767px
+	.product-block .functional-cart-detail {position:static; @include opacity(1); margin-bottom:35px;}
+	.ajax_block_product .product-block:hover .content_price {
+		@include opacity(1);
+        @include scale(1,1);
+        @include transition(all 0.4s ease 0s);
+	}
+	.footer-top .container {padding:0 40px; }
+	.products_block .nav-tabs {
+		position:static; margin:30px 0 35px ; @include rtl-margin-right(50px);
+		> li {margin-bottom:5px;}
+	}
+	.top-margin {margin-top:20px;}
+	#header-main .container > .inner {padding:0;}
+	.banner-img {
+		width:100%; text-align: center; display:inline-block; margin-bottom:10px;
+		a {display:inline-block;}
+	}
+	//end canvas
+	header .g-dropdown {
+		position: relative;
+		.groupe-btn {padding:5px; @include rtl-float-left(); cursor:pointer;}
+		ul.links {
+			li {display: block;}
+		}
+	}
+	/*
+	#header-main{
+		.inner{
+			text-align: center;
+		}	 
+	}*/
+	#header_logo{
+		margin: 20px 0 40px;
+	}
+	#send_friend_form {
+		width: 280px;
+	}
+	 #poweredby {text-align: center;}
+	 #footnav {text-align: center; margin-top: 10px;}
+	 .effect{
+		text-align: center;
+	}
+	#leosearchtopbox{
+		margin-right: 8px;
+		select{width: 40%;}
+		input{width: 60%;}
+	}
+	
+}
+
+@media (max-width: 500px) {
+	.content_sortPagiBar ul.pagination {clear:both; margin-top:20px;}
+}
+
+@media (max-width: $screen-xs) { // max 480px
+	#topbar .btn-group .dropdown-toggle { @include rtl-padding-right(15px); }
+	#header .cart_block {width:280px; @include rtl-right(-65px);}
+	header .nav .row {padding: 10px 0;}
+	#cart .heading {
+		display: inline-block; 
+	}
+	
+	.box-services{display: none}
+	.product-block .functional-buttons{
+		left: 0;
+	}
+	#layer_cart .layer_cart_cart .button-container{
+		text-align: center;
+	}
+	#layer_cart .layer_cart_cart .button-container .btn{
+		float: none!important;
+		margin-bottom: 10px;
+	}
+	
+}

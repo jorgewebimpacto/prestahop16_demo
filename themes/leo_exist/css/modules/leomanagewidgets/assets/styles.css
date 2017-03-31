@@ -1,0 +1,111 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/* Button */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+.custom_slide a:first-child img {
+  margin-bottom: 20px;
+}
+
+.top-margin {
+  margin-top: -30px;
+  z-index: 100;
+}
+
+.block_content .contact-us {
+  margin-bottom: 30px;
+}
+.block_content .contact-us li {
+  line-height: 40px;
+}
+.block_content .contact-us li em {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 3px;
+  text-align: center;
+  width: 24px;
+  padding: 3px 0 3px 4px;
+}
+.rtl .block_content .contact-us li em {
+  margin-left: 3px;
+  margin-right: inherit;
+}
+.rtl .block_content .contact-us li em {
+  padding: 3px 4px 3px 0;
+}
+.block_content .contact-us li:hover em {
+  color: white;
+}
+#footer .block_content .contact-us li {
+  padding: 0;
+}
+.block_content .payment-link img {
+  margin-top: 5px;
+}
+
+.block .nav-pills > li.active > a {
+  position: relative;
+}
+.block .nav-pills > li.active > a:before {
+  content: "\f0d7";
+  position: absolute;
+  bottom: -7px;
+  height: 10px;
+  line-height: 10px;
+  right: 50%;
+  margin-right: -4px;
+  font-family: "FontAwesome";
+  color: #428bca;
+  font-size: 19px;
+  z-index: 9;
+}
+.block .panel-group {
+  margin-bottom: 0;
+}
+
+/* HTML Img */
+/* Manufacture */
+.widget-manufacture .block_content {
+  border: 1px solid #eeeeee;
+  padding: 0 20px;
+}
+
+/* nomargin-special */
+.nopadding-special {
+  padding: 0;
+}
+
+/* footer-top-text */
+.footer-top-text {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+}
+.footer-top-text .get-off {
+  font-size: 49px;
+  font-weight: 700;
+}
+
+.payment-link a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}

@@ -1,0 +1,53 @@
+@import "compass";
+@import "theme_variables";
+
+
+
+$theme-color-secondary      	: $orange;
+
+//Base
+$link-hover-color				: $theme-color-secondary;
+$base-hover-border-color		: $theme-color-secondary;
+$nav-pills-active-link-hover-bg : $theme-color-secondary;
+$nav-pills-active-link-hover-bg : $theme-color-secondary;
+$pagination-hover-bg			: $theme-color-secondary;
+$brand-danger 					: $theme-color-secondary;
+
+// Layout
+$topbar-color-hover				: $link-hover-color;
+$topbar-link-hover-color		: $link-hover-color;
+
+$headermain-color-hover			: $link-hover-color;
+$headermain-link-hover-color	: $link-hover-color;
+
+$footer-top-color-hover			: $link-hover-color;
+$footer-top-color-hover			: $link-hover-color;
+$footer-center-color-hover		: $link-hover-color;
+$footer-nav-color-hover			: $link-hover-color;
+$footer-center-border			: 1px solid $theme-bg-secondary !default;
+
+$scroll-button-hover-color		: $theme-color-secondary;
+$checkout-step-button-active-bg : $theme-color-secondary;
+
+// Module
+$cart-icon-bg					: $theme-color-secondary !default;
+$button-addtocart-icon-bg		: $theme-color-secondary !default;
+$button-addtocart-bg			: $theme-color-secondary !default;
+
+$mainnav-color-hover			: $link-hover-color;
+$mainnav-link-hover-color		: $link-hover-color;
+$megamenu-link-hover-color		: $link-hover-color;
+$megamenu-sub-link-hover-color	: $link-hover-color;
+
+
+// Product
+$product-name-hover-color		: $link-hover-color;
+$product-text-price 			: $theme-color-secondary;
+$product-price-color			: $theme-color-secondary;
+$price-color					: $theme-color-secondary !default;
+$product-reduced-price			: $theme-color-secondary!default;
+
+
+$image-theme-base-path: "img/";
+
+@import "../_skin";

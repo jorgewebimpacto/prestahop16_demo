@@ -1,0 +1,277 @@
+
+//base
+a {
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+    }
+}
+
+.pagination {
+	> .active {
+		a, a:hover, a:focus ,span, span:hover, span:focus {
+			background-color: $pagination-hover-bg;
+		}
+	}
+	> li > a:hover , > li > a:focus , > li > span:hover, > li > span:focus {background-color: $pagination-hover-bg;}
+}
+
+/* Button */
+
+.btn-outline-inverse {
+  @include button-variant-outline($btn-default-color, $theme-color-secondary, $theme-color-secondary, $white, $theme-color-default , $theme-color-default );
+} 
+.btn-outline{
+  @include button-variant-outline($white, $theme-color-default , $theme-color-default , $btn-default-color, $theme-color-secondary, $theme-color-secondary );
+}
+
+.product-block {
+	.functional-cart-detail {
+		> div {
+	        &.cart {
+	            @include rtl-margin-right(16px);
+	            a {
+	                &:hover,&:focus {
+	                    &:before {
+	                        border-left: 16px solid $theme-color-secondary;
+	                    }
+	                }
+	            }
+	        }
+	        &.detail-link {
+	            a {
+	                &:hover, &:focus {
+	                    &:before {
+	                        border-right: 16px solid $theme-color-secondary;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+	.functional-buttons {
+		.action-button {
+			> div {
+				.btn:hover {color:$theme-color-secondary;}
+			}
+		}
+	}
+}
+
+
+// block-variant($border, $heading-text-color, $heading-bg-color, $heading-border)
+.#{$block-selector} {
+    .#{$block-heading-selector}{
+        &:before {
+            background-color:$theme-color-secondary;
+        }
+    }
+}
+
+.#{$block-prefix}-highlighted {
+    @include container-layout-variant ($white, $block-module-highlighted-bg , $white,  $theme-color-secondary);
+    .#{$block-heading-selector} {
+        background-color:$theme-color-secondary;
+    }
+    .bullet {
+        li {
+            a:hover {
+                color:$theme-color-secondary;
+            }
+        }
+
+    }
+}
+
+//layout
+#topbar  { 
+    .container > .inner{
+        @include container-layout-variant( $topbar-color, $topbar-bg, $topbar-link-color, $topbar-link-hover-color ); 
+    }    
+    .links-outline{
+        a { color: $topbar-link-hover-color; }
+    }  
+    .btn-group{
+      .quick-setting{
+          a {
+            &:hover{
+                color: $link-hover-color;
+            }
+          }
+      }
+    }
+}
+
+.footer-top{
+    .container > .inner{
+        @include container-layout-variant($footer-top-color, $footer-top-bg, $footer-top-color, $footer-top-color-hover ); 
+        
+    }
+   
+}
+.footer-center{
+   .container {
+   		border-top:$footer-center-border;
+   	> .inner {
+	    @include container-layout-variant($footer-center-color, $footer-center-bg, $footer-center-color, $footer-center-color-hover );   
+	   }
+   }
+}   
+.footer-bottom{
+   .container > .inner{
+    @include container-layout-variant($footer-bottom-color, $footer-bottom-bg, $footer-bottom-color, $footer-bottom-color-hover );   
+    
+   }
+}
+
+.footer-nav{ // copyright
+   .container > .inner{
+    @include container-layout-variant($footer-nav-color, $footer-nav-bg, $footer-nav-color, $footer-nav-color-hover );   
+    
+   }
+}
+
+// prestashop module
+
+/* Search */
+.groupe-btn {background-color:$theme-color-secondary;}
+
+// Wishlist
+#wishlist_button {
+	&:hover {
+		&:before { color: $theme-color-secondary;}
+	}
+}
+
+// Tab nav pills
+.block{
+  .nav-pills {
+    > li.active {
+      > a{
+		&,
+		&:hover,
+		&:focus {
+			background-color: $nav-pills-active-link-hover-bg;
+		}
+        &:before{
+          color: $nav-pills-active-link-hover-bg;
+        }
+      }    
+    }
+  }  
+}
+
+//prestashop page
+
+//CART steps
+
+ul.step{
+    li {       
+        &.step_current, &.step_done {
+           background:$checkout-step-button-active-bg;
+        }
+    }
+}
+
+// module
+
+// Blog
+
+.blog_container .blog-info h4 a:hover {
+	color:$theme-color-secondary;
+}
+#cart{        
+    h4 {
+        color: $cart-heading-color;
+    }
+}
+
+.price {        
+    color: $product-price-color;      
+}
+
+// Product
+.product-block{
+	.ajax_block_product & {
+		&:before {background:$theme-color-secondary;}
+	}
+	.name{
+		a {                                   
+        &:hover{
+            color: $product-name-hover-color;
+        }
+      }
+	}
+}
+
+.#{$app-brand-prefix}-megamenu {
+	/* menu level 1 */
+	.navbar-nav{
+		> li {
+			> a {
+				&:hover,&:focus,&:active{					
+					color: $megamenu-link-hover-color !important;				
+					background-color: $megamenu-link-bg-hover-color;
+				
+				}
+			} 
+			&:active{
+				> a{color: $megamenu-link-hover-color;}
+			}	
+			&:hover > .caret, &:active > .caret{
+				color: $megamenu-link-hover-color;
+			}
+		} 		
+	}
+	/* level 2 */
+	.dropdown-menu {	
+	    li{
+		    a {    
+			   	&:hover{
+			   		background-color:$theme-color-secondary; 
+			   		color:$white;		   		
+			   		.fa{
+			   			color: $megamenu-sub-link-hover-color;	   			
+			   		}
+			   	}
+		    }	    
+	    }		
+	}
+	.product-block {
+		.product-name {
+			&:hover {color:$megamenu-sub-link-hover-color;}
+		}
+	}
+	.dropdown-sub.dropdown-menu {
+		li {
+			a {
+				&:hover {
+					background-color:transparent;
+					color:$megamenu-sub-link-hover-color;
+				}
+			}
+		}
+	}
+	.dropdown{		
+		&:hover{
+			> a{		
+			color: $megamenu-link-hover-color;
+				.fa{
+					color: $megamenu-link-hover-color;
+				}									
+			}
+		}		
+	}
+}
+#thumbs_list li a:hover, #thumbs_list li a.shown {border-color:$theme-color-secondary;}
+
+.ct_menu a.shop-now {
+	background:$theme-color-secondary;
+}
+
+// off canvas menu
+#off-canvas-nav .offcanvas-mainnav{background-color: $theme-color-secondary;}
+
+/* Manawidgest */
+.banner-img .banner-content .banner-info {background-color:$theme-color-secondary;}
+.box-services:hover h5, .box-services:hover i {color:$theme-color-secondary;}

@@ -1,0 +1,116 @@
+@import "compass";
+@import "theme_variables";
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "bootstrap/rtl/grid";
+// Utility classes
+@import "bootstrap/rtl/utilities";
+@import "bootstrap/rtl/responsive-utilities";
+
+/********************************************************
+			Right to Left Styles
+********************************************************/
+
+* {
+	direction: rtl !important;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], 
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"] {
+    float:right; margin-left:5px!important;
+}
+#page {
+	text-align: right !important;
+}
+.container {padding:0 40px;}
+
+// paneltool
+
+.panelbutton {
+    -webkit-box-shadow: -3px 1px 2px #888888;
+    box-shadow: -3px 1px 2px #888888;
+ }
+.fancybox-margin {margin-right: 0px!important;}
+
+.editortool .label-customize {
+    background-image: url('#{$image-theme-base-path}label_customize-1.png');
+}
+.editortool .label-customize:hover {
+    background-position: 0 -111px;
+}
+.block .list-block li {
+	a {
+		&:before {
+			content: "\f104";
+		}
+	}
+}
+.accessories-block ul li{float: right !important;}
+.product-block {
+	.functional-cart-detail {
+     > div {
+            &.detail-link {
+                a {
+                    &:before {
+                        border-bottom: 33px solid transparent;
+                        border-left: 16px solid $black;
+                        border-top: 0 solid transparent;
+                        border-right:0;
+
+                    }
+                    &:hover,&:focus {
+                        &:before {
+                            border-bottom: 33px solid transparent;
+                            border-left: 16px solid $theme-color-secondary;
+                            border-top: 0 solid transparent;
+                            border-right:0;
+                        }
+                    }
+                }
+            }
+            &.cart {
+                a {
+                    &:before {
+                            border-bottom: 0 solid transparent;
+                            border-right: 16px solid #000;
+                            border-top: 34px solid transparent;
+                            border-left:0;
+                    }
+                    &:hover, &:focus {
+                        &:before {
+                            border-right: 16px solid $theme-color-secondary;
+                            border-bottom: 0 solid transparent;
+                            border-top: 34px solid transparent;
+                            border-left:0;
+
+                        }
+                    }
+                }
+                .ajax_add_to_cart_button.disabled {
+                    &:before {
+                        border-bottom: 0 solid transparent;
+                        border-right: 16px solid #000;
+                        border-top: 32px solid transparent;
+                        border-left:0;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Product detail
+
+#quantity_wanted_p .button-minus, #quantity_wanted_p .button-plus { border-right:0; border-left:1px solid #eee; }
+
+// payment module
+
+p.payment_module a.cheque, p.payment_module a.bankwire {
+    background-position:40px 15px;
+}
+
+// cart
+#layer_cart .crossseling {display:none;}

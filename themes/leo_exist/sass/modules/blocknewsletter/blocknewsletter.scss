@@ -1,0 +1,69 @@
+@import "compass";
+@import "theme_variables";
+
+/* Block newsletter */
+#columns #newsletter_block_left {	 
+	.success_inline, .warning_inline {
+		@include rtl-text-align-left();
+		padding: 1px 0 0 0;
+		margin-bottom: -19px;	
+	}
+	.success_inline	{
+		color: #418B19;
+	}
+	.warning_inline {
+		color: #f13340;
+	}
+}
+.mes-news {z-index:10000; display:none;}
+.news-footer {position: relative;}
+#newsletter_block_left form i.fa-envelope {
+    top:10px;
+    color: #cccccc;
+    font-size: 18px;
+    left: 10px;
+    position: absolute;
+}
+/* Block newsletter footer */
+#footer {
+	#newsletter_block_left {
+		overflow: hidden;
+		margin-bottom: 0;
+		width:100%;
+		display:inline-block;
+		text-align:center;
+		.text-newsletter {padding:0 100px;}
+		h5 {
+			font-size: $font-size-base - 2px;
+			text-transform: uppercase;
+			margin-top: 0;
+			&:after {
+				display: none;
+			}
+		}
+		.block_content {
+			overflow: hidden;
+			margin: 5px 0;
+			display:inline-block;
+		}
+		
+		.warning_inline {
+			display: block;
+			color: #f13340; 
+			font-size: $font-size-base - 1px ;
+			line-height :26px;
+			clear: both;
+		}
+		.newsletter-input {
+  			float:left;
+  			width: 260px;
+  			height:36px;
+  			background-color:#f5f5f5;
+  			border:0;
+  			@include rtl-padding-left(35px);
+  		}
+  		.success_inline	{
+			color: #418B19;
+		}
+	}
+}
